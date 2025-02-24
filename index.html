@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Job Application Bot</h1>
+    <form id="jobForm" class="my-form">
+        <label for="title">Job Title:</label>
+        <input type="text" id="title" name="title" value="Evening" required><br><br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" value="St Kilda East" required><br><br>
+        <label for="radius">Radius (km):</label>
+        <input type="number" id="radius" name="radius" value="10" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <div id="drop-area">
+            <p>Drag & Drop your resume here</p>
+            <input type="file" id="fileElem" accept=".pdf" style="display:none" required>
+            <button type="button" onclick="document.getElementById('fileElem').click()">Select File</button>
+        </div>
+        <button type="button" onclick="startApplication()">Start Application</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
