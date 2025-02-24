@@ -12,3 +12,10 @@
 .my-form {
     margin-bottom: 10px;
 }
+#drop-area p {
+    margin: 0;
+    font-weight: bold;
+}
+#drop-area p.dropped {
+    color: green;
+}
