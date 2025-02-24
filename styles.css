@@ -1,0 +1,14 @@
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+#drop-area.highlight {
+    border-color: purple;
+}
+.my-form {
+    margin-bottom: 10px;
+}
