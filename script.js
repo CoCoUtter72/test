@@ -31,6 +31,8 @@ function handleFiles(files) {
     dropArea.innerHTML = `<p>${resumeFile.name}</p>`;
 }
 
+document.getElementById('startApp').addEventListener('click', startApplication);
+
 async function startApplication() {
     const title = document.getElementById('title').value;
     const location = document.getElementById('location').value;
